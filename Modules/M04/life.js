@@ -32,7 +32,7 @@ function LIFE(){
         document.getElementById("Place").innerHTML = name + adult;
     }
     else if(age >= 55){
-        var senior = ", your position in life is currently can be in a multitude of different places right now Senior.  Retelling your best experiences in life to your Grandchildren.";
+        var senior = ", your position in life can be in a multitude of different places right now Senior.  But, the best part is telling your best experiences in life to your Grandchildren.";
         document.getElementById("Place").innerHTML = name + senior;
     }
 
