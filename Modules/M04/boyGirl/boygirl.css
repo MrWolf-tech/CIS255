@@ -1,0 +1,17 @@
+body{
+    max-width: 500px;
+    margin: auto;
+    background-color: bisque;
+}
+
+#a{
+    padding-top: 10px;
+}
+#n{
+    padding-top: 10px;
+}
+
+
+#NA{
+    overflow: auto;
+}
