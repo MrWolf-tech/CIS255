@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 24%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+<h1></h1>
+
+<div class="flex-container">
+  <div id="App">Appetizers</div>
+  <div id="Ent">Entrees</div>
+  <div id="Des">Deserts</div> 
+  <div id="Bev">Beverages</div>
+</div>
+
+<div id="App1" style="margin:auto;width:80%;height:40%;display:none;background-color:LightBlue;">Appetizer List goes here!</div>
+<div id="Ent1" style="margin:auto;width:80%;height:40%;display:none;background-color:LightBlue;">Entree List Goes Here</div>
+<div id="Des1" style="margin:auto;width:80%;height:40%;display:none;background-color:LightBlue;">Deserts go here</div>
+<div id="Bev1" style="margin:auto;width:80%;height:40%;display:none;background-color:LightBlue;">Beverages list here</div>
+
+<script>
+
+$(document).ready(function(){
+                $("#App").click(function(){
+                                $("#Ent1").slideUp("Slow");
+                                $("#Des1").slideUp("Slow");
+                                $("#Bev1").slideUp("Slow");
+                                $('#App1').stop(true, false).animate({height:"toggle",opacity:"toggle"},"slow");
+                });
+
+                $("#Ent").click(function(){
+                                $("#App1").slideUp("slow");
+                                $("#Des1").slideUp("slow");
+                                $("#Bev1").slideUp("slow");
+                                $("#Ent1").stop(true, false).animate({height:"toggle",opacity:"toggle"},"slow");
+                });
+
+                $("#Des").click(function(){
+                                $("#App1").slideUp("slow");
+                                $("#Ent1").slideUp("slow");
+                                $("#Bev1").slideUp("slow");
+                                $("#Des1").stop(true, false).animate({height:"toggle",opacity:"toggle"},"slow");
+                });
+
+                $("#Bev").click(function(){
+                                $("#App1").slideUp("slow");
+                                $("#Ent1").slideUp("slow");
+                                $("#Des1").slideUp("slow");
+                                $("#Bev1").stop(true, false).animate({height:"toggle",opacity:"toggle"},"slow");
+                });
+});
+</script>
+</body>
+</html>

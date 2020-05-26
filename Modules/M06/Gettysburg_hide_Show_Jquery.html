@@ -1,0 +1,72 @@
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Fade Menu</title>
+</head>
+<body>
+    <h1>THE GETTYSBURG ADDRESS</h1>
+    <script>
+        //This is the hide show functions in JQuery
+//readys the document
+        $(document).ready(function(){  
+//hides the first paragraph 
+          $("#hide").click(function(){
+          $("#para1").hide();
+          $("#para1intro").show();
+          });
+//shows the first paragraph
+          $("#show").click(function(){
+          $("#para1").show();
+          $("#para1intro").hide();
+          });
+//shows the 2nd paragraph
+          $("#show2").click(function(){
+          $("#para2").show();
+          $("#para2intro").hide();
+          });
+//hides the 2nd paragraph
+          $("#hide2").click(function(){
+          $("#para2").hide();
+          $("#para2intro").show();
+          });
+//shows the 3rd paragraph
+          $("#show3").click(function(){
+          $("#para3").show();
+          $("#para3intro").hide();
+          });
+//hides the 3rd paragraph
+          $("#hide3").click(function(){
+          $("#para3").hide();
+          $("#para3intro").show();
+          });
+        });
+    </script>
+    <p>
+    <a id="hide" href="#">Hide</a>
+    <a id="show" href="#">Show</a>
+    </p>
+        <p id="para1">Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</p>
+        <p id="para1intro">Four score and seven years ago our fathers brought...</p>
+    <p>
+    <a id="hide2" href="#">Hide</a>
+    <a id="show2" href="#">Show</a>
+    </p>
+        <p id="para2">Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.</p>
+        <p id="para2intro">Now we are engaged in a great civil war,...</p>
+
+    <p>
+    <a id="hide3" href="#">Hide</a>
+    <a id="show3" href="#">Show</a>
+    </p>
+        <p id="para3">But, in a larger sense, we can not dedicate we can not consecrate we can not hallow this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion that we here highly resolve that these dead shall not have died in vain that this nation, under God, shall have a new birth of freedom and that government of the people, by the people, for the people, shall not perish from the earth.</p>
+        <p id="para3intro">But, in a larger sense, we can not dedicate we can...</p>
+    <script>
+        $("#para1").hide();
+        $("#para2").hide();
+        $("#para3").hide();
+    </script>
+
+
+
+</body>
+</html>
