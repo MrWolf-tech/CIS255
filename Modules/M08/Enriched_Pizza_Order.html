@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>The Pizza Shop</title>
+        <meta charset="utf-8">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    </head>
+    <body>
+        <h1>Pizza Ordering Menu</h1><br>
+
+        <form name="ordermenu" action="EPO_Recieved.html" onsubmit="return validateForm()" method="GET">
+        <div id="Name">
+            <label for="Name">Name:</label>
+              <input type="text" id="Name" name="Name"><br><br>
+        </div><br>
+
+        <div id="sizetable">
+            <h3 class="tablehead">Select size:</h3>
+            <div class="SizeSelector">	
+                <input type="radio" name="size" value="Small"> Small<br>
+                <input type="radio" name="size" value="Medium"> Medium<br>
+                <input type="radio" name="size" value="Large"> Large<br>
+            </div>
+        </div><br>
+
+        <div id="meattable">
+            <h3 class="tablehead">What kind of Pizza do you want:</h3>
+            <div class="StyleSelector">
+                <input type="radio" name="meat" value="Pepperoni"> Pepperoni<br>
+                <input type="radio" name="meat" value="Sausage"> Sausage<br>
+                <input type="radio" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+                <input type="radio" name="meat" value="Ground Beef"> Ground Beef<br>
+            </div>
+        </div><br>
+
+        <input type="submit" value="Submit">
+        
+        </form>
+
+
+        <script>
+            function validateForm() {
+                var x = document.forms["ordermenu"]["Name"].value;
+                if (x == "") {
+                  alert("Please input your Name for the order.");
+                  return false;
+                 }
+                }               
+        </script>
+    </body>
+</html>
